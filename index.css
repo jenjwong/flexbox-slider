@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background:#ffc600;
+  font-family:'helvetica neue';
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.wrapper {
+  display: flex;
+  height: 100vh;
+  text-align: center;
+  width: 100vw;
+}
+
+.wrapper > * {
+  display: flex;
+  flex: 1;
+  align-items: flex-end;
+  transition: all 0.2s;
+  max-width: auto;
+  border: 2px solid black;
+}
+
+.wrapper span {
+  flex: 1;
+  color: white;
+  margin-bottom: 10%;
+  transform: translateY(1000%);
+  border: 2px solid yellow;
+}
+
+.selected {
+  flex: 3;
+  font-size: 200%;
+}
+
+.yellow {
+  background-image: url("tree.png");
+}
+
+.green {
+  background-image: url("jen.jpg");
+}
+
+.purple {
+  flex: 0;
+}
+
+.blue {
+  background-image: url("lake.png");
+}
